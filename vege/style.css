@@ -19,9 +19,93 @@ středně široké obrazovky:
 
 
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  margin:0;
+}
+
+.item {
+border: 1px solid rgb(235, 228, 228);
+padding: 0.5rem;
+}
+
+.burger {
+  background-image: url('images/burger.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 100%;
+}
+
+.salat {
+  background-image: url('images/salat.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img {
+  min-width: 100%;
+}
+
+.cizrna {
+  background-image: url('images/cizrna.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tacos {
+  background-image: url('images/tacos.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.chlebicek {
+  background-image: url('images/chlebicek.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main {
+ min-height: 200px;
+}
+
+.other {
+  min-height: 90px;
+ }
+
+.foto {
+  z-index: -1;
+}
+
+.nazev {
+  font-weight: 800;
+  color: white;
+  font-size: 1.2rem;
+
+}
+
+.nazev main {
+  font-weight: 800;
+  color: white;
+  font-size: 1.75rem;
+}
+
+.nabidka {
+  font-weight: 400;
+  font-size:0.8rem;
+  color: white;
+  }
+
+.komentare {
+  font-weight: 400;
+  font-size:0.8rem;
+  color: white;
+  }
 
 .paticka {
     text-align: center;
