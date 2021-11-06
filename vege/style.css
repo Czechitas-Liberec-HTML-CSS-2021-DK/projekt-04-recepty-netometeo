@@ -26,6 +26,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   z-index: 0;
   margin:0;
 }
@@ -33,49 +34,49 @@ body {
 .item {
 border: 1px solid rgb(235, 228, 228);
 padding: 0.5rem;
+display: 
 }
 
 .burger {
   background-image: url('images/burger.jpg');
-  background-position: center;
   background-repeat: no-repeat;
-  max-height: 100%;
+  background-size: cover;
 }
 
 .salat {
   background-image: url('images/salat.jpg');
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  max-height: 40%;
+
 }
 
-.img {
-  min-width: 100%;
-}
 
 .cizrna {
   background-image: url('images/cizrna.jpg');
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .tacos {
   background-image: url('images/tacos.jpg');
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .chlebicek {
   background-image: url('images/chlebicek.jpg');
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main {
- min-height: 200px;
+flex: 1 0 200px;
 }
 
 .other {
-  min-height: 90px;
+  flex-shrink: 1 0 90px;
  }
 
 .foto {
@@ -86,7 +87,8 @@ padding: 0.5rem;
   font-weight: 800;
   color: white;
   font-size: 1.2rem;
-
+  text-align: left;
+  position: relative;
 }
 
 .nazev main {
@@ -99,12 +101,16 @@ padding: 0.5rem;
   font-weight: 400;
   font-size:0.8rem;
   color: white;
+  text-align: start;
+  position: relative;
   }
 
 .komentare {
   font-weight: 400;
   font-size:0.8rem;
   color: white;
+  text-align: right;
+  position: relative;
   }
 
 .paticka {
