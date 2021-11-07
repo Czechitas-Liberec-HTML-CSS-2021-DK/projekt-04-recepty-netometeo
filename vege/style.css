@@ -23,96 +23,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  z-index: 0;
-  margin:0;
-}
-
-.item {
-border: 1px solid rgb(235, 228, 228);
-padding: 0.5rem;
-display: 
-}
-
-.burger {
-  background-image: url('images/burger.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.salat {
-  background-image: url('images/salat.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 200px;
-  max-height: 40%;
-
-}
-
-
-.cizrna {
-  background-image: url('images/cizrna.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.tacos {
-  background-image: url('images/tacos.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.chlebicek {
-  background-image: url('images/chlebicek.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main {
-flex: 1 0 200px;
-}
-
-.other {
-  flex-shrink: 1 0 90px;
- }
-
-.foto {
-  z-index: -1;
-}
-
-.nazev {
-  font-weight: 800;
-  color: white;
-  font-size: 1.2rem;
-  text-align: left;
-  position: relative;
-}
-
-.nazev main {
-  font-weight: 800;
-  color: white;
-  font-size: 1.75rem;
-}
-
-.nabidka {
-  font-weight: 400;
-  font-size:0.8rem;
-  color: white;
-  text-align: start;
-  position: relative;
-  }
-
-.komentare {
-  font-weight: 400;
-  font-size:0.8rem;
-  color: white;
-  text-align: right;
-  position: relative;
-  }
-
 .paticka {
     text-align: center;
     font-size: 14px;
@@ -127,3 +37,106 @@ flex: 1 0 200px;
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  justify-content: space-between;
+}
+
+.item {
+border: 1px solid rgb(235, 228, 228);
+padding: 0.5rem;
+flex: 1 1 100%;
+}
+
+.burger {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/burger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.salat {
+  background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/salat.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 2 2 40%;
+  margin: 0;
+  min-height: 200px;
+}
+
+
+.cizrna {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/cizrna.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tacos {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/tacos.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.chlebicek {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/chlebicek.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.other {
+  min-height: 90px;
+ }
+
+.ostatni {
+  flex: 1 1 60%;
+  margin: 0;
+  padding: 0;
+ }
+
+.nazev {
+  font-weight: 800;
+  font-family: Raleway;
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+  position: relative;
+  padding:0;
+  margin-top: 2.5rem;
+  margin-bottom: 0rem;
+}
+
+.nazev-main {
+  font-weight: 800;
+  font-family: Raleway;
+  color: white;
+  font-size: 1.75rem;
+  text-align:left;
+  position: relative;
+  margin-top: 8rem;
+  margin-bottom: 0rem;
+}
+
+.nabidka {
+  font-weight: 400;
+  font-size:0.8rem;
+  color: white;
+  text-align: start;
+  position: relative;
+  margin: 0px;
+  }
+
+.komentare {
+  font-weight: 400;
+  font-size:0.8rem;
+  color: white;
+  text-align: right;
+  position: relative;
+  margin-top: -14px;
+  }
