@@ -130,7 +130,7 @@ flex: 1 1 100%;
   text-align: start;
   position: relative;
   margin: 0px;
-  }
+}
 
 .komentare {
   font-weight: 400;
@@ -139,4 +139,87 @@ flex: 1 1 100%;
   text-align: right;
   position: relative;
   margin-top: -14px;
-  }
+}
+
+  @media screen and (min-width: 480px) {
+  
+      .item {
+      padding: 1.25rem;
+      }
+    
+      .salat {
+        min-height: 250px;
+      }
+
+      .other {
+        min-height: 150px;
+        max-width: 50%;
+      }
+
+      .ostatni {
+      display: flex;
+      max-width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      }
+    
+      .nazev-main {
+        font-size: 2rem;
+        margin-top: 10rem;
+      }
+
+      .nazev {
+        font-size: 1.5rem;
+        margin-top: 4rem;
+      }
+
+      .chlebicek {
+        order: 1;
+      }
+
+      .tacos {
+        order: 2;
+      }
+
+      .burger {
+        order: 4;
+      }
+
+      .cizrna {
+        order: 3;
+      }
+    }
+  @media screen and (min-width: 860px) {
+  
+  .salat {
+        min-height: 400px;
+        max-width: 33%
+      }
+
+      .other {
+        min-height: 200px;
+        max-width: 50%;
+      }
+
+      .ostatni {
+      max-width: 66%;
+      }
+    
+      .nazev-main {
+        font-size: 3rem;
+        margin-top: 13rem;
+      }
+
+      .nazev {
+        font-size: 1.75rem;
+        margin-top: 8rem;
+      }
+
+      .container {
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+    }
