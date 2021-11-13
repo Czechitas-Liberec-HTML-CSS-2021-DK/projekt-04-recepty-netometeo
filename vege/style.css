@@ -19,8 +19,8 @@ středně široké obrazovky:
 
 
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .paticka {
@@ -37,3 +37,189 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  justify-content: space-between;
+}
+
+.item {
+border: 1px solid rgb(235, 228, 228);
+padding: 0.5rem;
+flex: 1 1 100%;
+}
+
+.burger {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/burger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.salat {
+  background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/salat.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 2 2 40%;
+  margin: 0;
+  min-height: 200px;
+}
+
+
+.cizrna {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/cizrna.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tacos {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/tacos.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.chlebicek {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('images/chlebicek.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.other {
+  min-height: 90px;
+ }
+
+.ostatni {
+  flex: 1 1 60%;
+  margin: 0;
+  padding: 0;
+ }
+
+.nazev {
+  font-weight: 800;
+  font-family: Raleway;
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+  position: relative;
+  padding:0;
+  margin-top: 2.5rem;
+  margin-bottom: 0rem;
+}
+
+.nazev-main {
+  font-weight: 800;
+  font-family: Raleway;
+  color: white;
+  font-size: 1.75rem;
+  text-align:left;
+  position: relative;
+  margin-top: 8rem;
+  margin-bottom: 0rem;
+}
+
+.nabidka {
+  font-weight: 400;
+  font-size:0.8rem;
+  color: white;
+  text-align: start;
+  position: relative;
+  margin: 0px;
+}
+
+.komentare {
+  font-weight: 400;
+  font-size:0.8rem;
+  color: white;
+  text-align: right;
+  position: relative;
+  margin-top: -14px;
+}
+
+  @media screen and (min-width: 480px) {
+  
+      .item {
+      padding: 1.25rem;
+      }
+    
+      .salat {
+        min-height: 250px;
+      }
+
+      .other {
+        min-height: 150px;
+        max-width: 50%;
+      }
+
+      .ostatni {
+      display: flex;
+      max-width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      }
+    
+      .nazev-main {
+        font-size: 2rem;
+        margin-top: 10rem;
+      }
+
+      .nazev {
+        font-size: 1.5rem;
+        margin-top: 4rem;
+      }
+
+      .chlebicek {
+        order: 1;
+      }
+
+      .tacos {
+        order: 2;
+      }
+
+      .burger {
+        order: 4;
+      }
+
+      .cizrna {
+        order: 3;
+      }
+    }
+  @media screen and (min-width: 860px) {
+  
+  .salat {
+        min-height: 400px;
+        max-width: 33%
+      }
+
+      .other {
+        min-height: 200px;
+        max-width: 50%;
+      }
+
+      .ostatni {
+      max-width: 66%;
+      }
+    
+      .nazev-main {
+        font-size: 3rem;
+        margin-top: 13rem;
+      }
+
+      .nazev {
+        font-size: 1.75rem;
+        margin-top: 8rem;
+      }
+
+      .container {
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+    }
